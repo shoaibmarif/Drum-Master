@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "sans serif";
+  background: rosybrown;
+  z-index: -2;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+
+  color: rgb(223, 213, 213);
+}
+header {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(214, 208, 208);
+}
+.keys {
+  background: lightblue;
+  width: 100%;
+  display: flex;
+}
+.keys > div {
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.key1 {
+  background: #60d394;
+}
+
+.key2 {
+  background: #d36060;
+}
+.key3 {
+  background: #c060d3;
+}
+.key4 {
+  background: #d3d160;
+}
+.key5 {
+  background: lightslategrey;
+}
+.key6 {
+  background: red;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 80%;
+  }
+}
+
+.visual > div {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+.keys h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 40px;
+  margin-top: 20px;
+}
